@@ -19,3 +19,5 @@ Last year, I spent about two months exploring HTML, CSS, and a bit of JavaScript
 This project is my way of making sure I follow through and build a solid foundation for future web development work. 🚀
 
 # Day 1
+
+I succesfully made a repo, cloned it, and commit changes. I also added a new SSHkey. I still have a couple of things I need to polish but so far it is a good progress.
