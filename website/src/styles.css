@@ -1,0 +1,200 @@
+@font-face{
+  font-family: 'DMSans';
+  src: url('../../assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'DMSans italic';
+  src: url('../../assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+.main-heading-s {
+  color: #817D92;
+  font-family: "DMSans italic", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal; }
+
+.main-heading-m {
+  color: #817D92;
+  font-family: "DMSans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal; }
+
+.heading-xs {
+  color: #E6E5EA;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal; }
+
+.heading-s {
+  color: #E6E5EA;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal; }
+
+.heading-s-dark {
+  color: #24232C;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal; }
+
+.heading-m {
+  color: #E6E5EA;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal; }
+
+.heading-l {
+  color: #E6E5EA;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal; }
+
+.heading-l-green {
+  color: #A4FFAF;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal; }
+
+.body-m {
+  color: #E6E5EA;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal; }
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body, h1, h2, h3, h4, a, p, figure, blockquote, dl, dd, div {
+  margin: 0 auto;
+}
+body{
+  display: grid;
+  grid-template-columns: 1fr;  /* 1 fraction */
+  margin: auto;
+  place-items: center;
+}
+.main-container{
+  display: grid;
+  height: 880px;
+  width: 1120px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 32px;
+  background-color: #ff40d2;
+}
+
+.left-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column: 1/2;
+  grid-row: 1/4;
+  gap: 32px;
+  background-color: #c9d596;
+  width: 100%;
+}
+
+.right-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column: 2/5;
+  grid-row: 1/4;
+  gap: 32px;
+  background-color: #a4efb7;
+  width: 100%;
+}
+.box {
+  height: 100%;
+  width: 100%;
+  padding: 10%;
+  border-radius: 15px;
+  background-color: #2ec0ff;
+}
+
+/* Optional: For clarity, you can add individual grid item styles */
+.left-sidebar > div,
+.right-grid > div {
+  border: 1px solid #ccc;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 600px) {
+  /* Fonts */
+  .main-heading-s {
+    font-size: 18px;
+  }
+  .main-heading-m {
+    font-size: 32px;
+  }
+  .heading-xs {
+    font-size: 18px;
+  }
+  .heading-s {
+    font-size: 18px;
+  }
+  .heading-s-dark {
+    font-size: 18px;
+  }
+  .heading-m {
+    font-size: 32px;
+  }
+  .heading-l {
+    font-size: 48px;
+  }
+  .heading-l-green {
+    font-size: 48px;
+  }
+  .body-m {
+    font-size: 24px;
+  }
+  input::placeholder {
+    font-size: 48px;
+  }
+  input[type=text], input[type=password] {
+    height: 68px;
+    margin: 9px 0px;
+    font-size: 24px;
+  }
+  /* Containers */
+  .signin-bg{
+    height: 515px;
+  }
+  .signinbutton {
+    height: 65px;
+    margin-top: 61px;
+  }
+  .headcont{
+    height: 86px;
+  }
+  .inputcont{
+    height: 230px;
+  }
+  .buttonscont{
+    border: 30px solid transparent;
+    border-top: 18px solid transparent;
+    border-bottom: 26px solid transparent;
+    height: 184px;
+  }
+}
