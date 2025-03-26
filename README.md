@@ -20,4 +20,13 @@ This project is my way of making sure I follow through and build a solid foundat
 
 # Day 1
 
-I succesfully made a repo, cloned it, and commit changes. I also added a new SSHkey. I still have a couple of things I need to polish but so far it is a good progress.
+I succesfully made a repo, cloned it, and commit changes. I also added a new SSHkey. I still have a couple of things I need to polish regarding to github but, so far, it is a good progress.
+
+# Day 2
+
+Since I've been working with a JPEG some of the measurements are not right, I will redo the file on Figma to have a better understanding of it and link it here. Aside from that I managed to add the fonts and give some color to the page, It shouldnt take me long to position all the sentences correctly.
+
+I still have some issues with Github, mostly that my commits go to all the changes i've done.
+
+To Do after figma+sentences:
+- Work out the @media logic
