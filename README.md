@@ -28,5 +28,8 @@ Since I've been working with a JPEG some of the measurements are not right, I wi
 
 I still have some issues with Github, mostly that my commits go to all the changes i've done.
 
-To Do after figma+sentences:
+**Done**:
+4.5 grids out of 8
+
+**To Do** after figma+sentences:
 - Work out the @media logic
