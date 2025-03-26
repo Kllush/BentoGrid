@@ -32,6 +32,10 @@ I still have some issues with Github, mostly that my commits go to all the chang
 4.5 grids out of 8
 
 **To Do** after figma+sentences:
+**Done**:
+4.5 grids out of 8
+
+**To Do** after figma+sentences:
 - Work out the @media logic
 
 # Day 3
