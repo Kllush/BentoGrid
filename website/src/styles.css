@@ -66,6 +66,7 @@
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
+  letter-spacing: -0.125rem;
   line-height: 2rem;}
 
 .heading-m-dark {
@@ -73,7 +74,8 @@
   font-family: "DMSans", sans-serif;
   font-size: 1.77rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: -0.125rem;
   line-height: 1.77rem;}
 
 .heading-xm-dark {
@@ -92,7 +94,7 @@
   font-style: italic;
   font-weight: 500;
   letter-spacing: -0.125rem;
-  line-height: 2.32rem;}
+  line-height: 2rem;}
 
 .body-s {
   color: white;
@@ -107,14 +109,14 @@
   font-family: "DMSans", sans-serif;
   font-size: 1.125rem; /* 18px */
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5rem;}
 
 *, *::after, *::before {
   box-sizing: border-box;
 }
 body, h1, h2, h3, h4, a, p, figure, blockquote, dl, dd, div {
-  margin: 0 auto;
+  margin: 0px;
 }
 .margin14 {
   margin-bottom: 0.875rem;
@@ -165,7 +167,6 @@ body{
   width: 100%;
   border-radius: 8px;
   transition: all 0.3s ease;
-  position: relative;
 }
 
 .smallBox:hover {
@@ -309,7 +310,7 @@ body{
   height: 100%;
   width: 251px;
   text-align: justify;
-  justify-items: center;
+  align-items: center;
 }
 
 .secondBoxTextContainer {
