@@ -7,7 +7,7 @@
 .heading-xl-white {
   color: white;
   font-family: "DMSans", sans-serif;
-  font-size: 3.8rem;
+  font-size: 3.75rem;
   font-style: normal;
   font-weight: 500;
   line-height: 3.5rem;}
@@ -15,7 +15,7 @@
 .heading-xl-dark {
   color: #121212;
   font-family: "DMSans", sans-serif;
-  font-size: 3.8rem;
+  font-size: 3.75rem;
   font-style: normal;
   font-weight: 600;
   line-height: 3rem;}
@@ -23,7 +23,7 @@
 .heading-xl-gold {
   color: #FFCE6E;
   font-family: "DMSans", sans-serif;
-  font-size: 3.8rem;
+  font-size: 3.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: 3.5rem;}
@@ -31,7 +31,7 @@
 .heading-xl-it {
   color: white;
   font-family: "DMSans", sans-serif;
-  font-size: 3.8rem;
+  font-size: 3.75rem;
   font-style: italic;
   font-weight: 500;
   line-height: 3.6rem;}
@@ -79,7 +79,7 @@
 .heading-xm-dark {
   color: #121212;
   font-family: "DMSans", sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.125rem;
@@ -88,7 +88,7 @@
 .heading-xm-purple {
   color: #7650DC;
   font-family: "DMSans", sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: italic;
   font-weight: 500;
   letter-spacing: -0.125rem;
@@ -114,28 +114,29 @@
   box-sizing: border-box;
 }
 body, h1, h2, h3, h4, a, p, figure, blockquote, dl, dd, div {
-  margin: 0px;
+  margin: 0 auto;
 }
 .margin14 {
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
 }
 .margin24 {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 .margin36 {
-  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
 }
 body{
   display: grid;
   grid-template-columns: 1fr;  /* 1 fraction */
   margin-inline: auto;
-  margin-top: 82px;
-  padding: 0%;
+  padding: 5rem;
   justify-items: center;
   background-color: #F5F5F5;
 }
 .main-container{
   display: grid;
+  height: 100%;
+  width: 100%;;
   height: 884px;
   width: 1120px;
   grid-template-columns: repeat(4, 1fr);
@@ -144,7 +145,7 @@ body{
 
 .left-grid {
   display: grid;
-  grid-template-rows: 416px 436px;
+  grid-template-rows: minmax(300px, 416px) minmax(300px, 436px);
   grid-column: 1/2;
   gap: 2rem;
   width: 100%;
@@ -153,7 +154,7 @@ body{
 .right-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 324px 248px ;
+  grid-template-rows: 324px 248px 248px;
   grid-column: 2/5;
   gap: 2rem;
   width: 100%;
@@ -163,6 +164,14 @@ body{
   height: 100%;
   width: 100%;
   border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.smallBox:hover {
+  transform: scale(1.07);
+  z-index: 1;
+  box-shadow: 12px 12px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .whiteBG{

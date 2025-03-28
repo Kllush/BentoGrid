@@ -50,3 +50,18 @@ I read the supporting documents of the challenge and there are a few issues, mos
 - Transfer files from Ai to Figma
 - Figure out the commits
 - Work out the `@media` logic
+
+## Day 4
+
+Today I focused on the design part of the challenge, barely did any HTML. I Have the AI file almost done and I did some minor changes to the HTML, basically just a hover style because it looked so plain and I was feeling guilty of spending my whole day just on illustrator.
+
+### <ins>Done:</ins>
+- AI Template 70% done
+- Hover style for the elements
+
+### <ins>To Do:</ins>
+- Do the tablet version
+- Expand singular elements of mobile version
+- Transfer files from Ai to Figma
+- Fix a typography issue, XM and M are basically the same.
+- Work out the `@media` logic
