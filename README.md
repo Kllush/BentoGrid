@@ -65,3 +65,17 @@ Today I focused on the design part of the challenge, barely did any HTML. I Have
 - Transfer files from Ai to Figma
 - Fix a typography issue, XM and M are basically the same.
 - Work out the `@media` logic
+
+## Day 5
+
+It was a half day, I was tinkering with `@media` and realized that instead of using pixels for the dimensions I should use a combination of rems and aspect ratio. I changed some dimensions which broke the website, therefor Im not pushing today's changes, I feel confident that I can finish soon.
+
+### <ins>Done:</ins>
+- Tinkered with `@media`
+
+### <ins>To Do:</ins>
+- Do the tablet version (just scale it down)
+- Expand singular elements of mobile version
+- Transfer files from Ai to Figma
+- Fix a typography issue, XM and M are basically the same.
+- Work out the `@media` logic
