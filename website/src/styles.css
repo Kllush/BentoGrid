@@ -128,36 +128,37 @@ body, h1, h2, h3, h4, a, p, figure, blockquote, dl, dd, div {
   margin-bottom: 2.25rem;
 }
 body{
-  display: grid;
-  grid-template-columns: 1fr;  /* 1 fraction */
-  padding-inline: auto;
-  padding: 5rem;
   justify-items: center;
   background-color: #F5F5F5;
 }
+.main-container-margin{
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 1324px; /* 1120+20% */
+  aspect-ratio: 14/11;
+  background-color: skyblue;
+}
 .main-container{
   display: grid;
-  height: 100%;
-  width: 100%;;
-  height: 884px;
-  width: 1120px;
+  width: 100%;
+  max-width: 1120px;
+  aspect-ratio: 14/11;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
-
-.left-grid {
-  display: grid;
-  grid-template-rows: minmax(300px, 416px) minmax(300px, 436px);
-  grid-column: 1/2;
-  gap: 2rem;
-  width: 100%;
-}
-
 .right-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 324px 248px 248px;
+  grid-template-rows: 20rem repeat(2, 15.5rem);
   grid-column: 2/5;
+  gap: 2rem;
+  width: 100%;
+}
+.left-grid {
+  display: grid;
+  grid-template-rows: minmax(300px, 414px) minmax(300px, 434px);
+  grid-column: 1/2;
   gap: 2rem;
   width: 100%;
 }
@@ -351,4 +352,55 @@ body{
 .AIcontentBox {
   padding-top: 26px;
   padding-left: 2rem;
+}
+
+/*Media Queries*/
+@media (min-width:1441px) { /* Large screens such as UHD monitors and TVs */
+  body {
+    background-color: lightsalmon;
+  }
+}
+@media (max-width:1441px) { /* Desktops including hi-res laptops */
+}
+@media (max-width:1025px)  { /* Tablets including landscape orientation and smaller laptops */
+  body {
+    background-color: lightcyan;
+    padding-inline: auto;
+    padding-top: 5rem;
+  }
+  .main-container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    max-width: 1120px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .right-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20rem repeat(2, 15.5rem);
+    grid-column: 2/5;
+    gap: 2rem;
+    width: 100%;
+  }
+  .left-grid {
+    display: grid;
+    grid-template-rows: minmax(300px, 414px) minmax(300px, 434px);
+    grid-column: 1/2;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .smallBox {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+}
+@media (max-width:601px)  { /* Mobile phones and smaller portable devices */
+  body {
+    background-color: lightseagreen;
+  }
 }
