@@ -94,3 +94,9 @@ Im also trying to make the dimensions as aspect:ratio instead of REMs or pixels,
 - Expand singular elements of mobile version
 - Transfer files from Ai to Figma
 - Fix a typography issue, XM and M are basically the same.
+
+## Day 7
+
+My initial measurements were inaccurate. After seeing [Kevin Powell's](https://www.youtube.com/watch?v=h4dHvo09cG4) approach to this challenge, I'd like to try something more cohesive. Rather than deleting this project, I'll keep it as a reminder of my starting point and create a [second project](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj) instead.
+
+Today I will finalize the AI files and upload them to Figma. I will add the Ai files to the second project instead.
