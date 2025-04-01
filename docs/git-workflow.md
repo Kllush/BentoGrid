@@ -5,7 +5,9 @@ This is a clear step-by-step guide to keep your local project and GitHub reposit
 ## 1. Pull Latest Changes from GitHub (Before Making Local Changes)
 Run this first to ensure your local repo is up to date:
 
-`git pull origin main`
+```sh
+git pull origin main
+```
 
 ## 2. Make & Save Changes Locally
 
@@ -14,17 +16,23 @@ Edit files in VSCode as needed.
 ## 3. Stage Changes
 Add modified or new files to the staging area:
 
-`git add .`
+```sh
+git add .
+```
 
 ## 4.Commit Your Changes
 Write a commit message describing what you changed:
 
-`git commit -m "Your commit message here"`
+```sh
+git commit -m "Your commit message here"
+```
 
 ## 5.Push Changes to GitHub
 Upload your local changes to the remote repository:
 
-`git push origin main`
+```sh
+git push origin main
+```
 
 📌 ##Key Habit:
 -Always pull before you start working.
