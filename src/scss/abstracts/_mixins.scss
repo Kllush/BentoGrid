@@ -1,0 +1,16 @@
+@mixin spacing($spacing, $font-size) {
+  letter-spacing: calc($spacing / 100) * $font-size;
+}
+
+@mixin heading($color, $size, $line-height, $weight: 500, $spacing: normal) {
+    color: $color;
+    font-family: "DMSans", sans-serif;
+    font-size: $size;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: $line-height;
+    
+    @if $spacing != normal {
+      @include spacing($spacing, $size);
+    }
+  }

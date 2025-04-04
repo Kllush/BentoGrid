@@ -1,0 +1,34 @@
+@import 'abstracts/index';
+@import 'base/_index';
+@import 'components/_index';
+@import 'layout/_index';
+@import 'pages/_index';
+
+//code//
+body{
+    display: flex;
+    background-color: $mainBackground;
+    align-items: center;
+    padding-block-start: 2rem;
+}
+
+main{
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1rem
+}
+div{
+    
+    margin-block-end: 2rem;
+    
+    h1{
+        @include heading-xl-light;
+    }
+    p{
+        margin-block-start: .75rem;
+    }
+}
+
+@import 'base/_media';
