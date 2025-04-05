@@ -14,3 +14,47 @@
       @include spacing($spacing, $size);
     }
   }
+
+@mixin grid-area-names {
+  @for $i from 1 through length($cardNames) {
+      .card#{nth($cardNames, $i)} {
+          grid-area: nth($gridAreas, $i);
+      }
+  }
+
+    // EXPLANATION
+
+// @for $i from 1 through length($cardNames) {
+// - Loops through the indices of the $cardNames list, from 1 to its total length.
+
+//     .card#(expression)
+//     - Creates a class name by combining `.card` with the corresponding name from an expression.
+ 
+//            {nth($cardNames, $i)} {
+//          - this is the expression, nth($cardNames, $i) gets the i-th value from $cardNames.
+
+//         grid-area: nth($gridAreas, $i);
+//       - same as before, nth($gridAreas, $i) gets the i-th value from $gridAreas.
+
+}
+
+@mixin auto-grid($cols, $rows, $padding-inline: 0px, $padding-block: 0px) {
+  
+  $final-cols: ();
+  @each $col in $cols {
+    $final-cols: append($final-cols, $col + fr);
+  }
+
+  $final-rows: ();
+  @each $row in $rows {
+    $final-rows: append($final-rows, $row + fr);
+  }
+  
+  display: grid;
+  grid-template-columns: $final-cols;
+  grid-template-rows: $final-rows;
+  gap: $gridGap;
+  padding-block: $padding-block;
+  padding-inline: $padding-inline;
+}
+

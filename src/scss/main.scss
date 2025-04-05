@@ -5,23 +5,28 @@
 @import 'pages/_index';
 
 //code//
+
+@include grid-area-names;
+
 body{
     display: flex;
-    background-color: $mainBackground;
     align-items: center;
-    padding-block-start: 2rem;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    background-color: $mainBackground;
 }
 
 main{
+        
+    width: 100%;
     margin:0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 1rem
+    gap: $gridGap;
 }
+
 div{
-    
-    margin-block-end: 2rem;
     
     h1{
         @include heading-xl-light;

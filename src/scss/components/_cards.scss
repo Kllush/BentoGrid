@@ -20,10 +20,12 @@
         @extend %card;
         justify-items: center;
         background-color: $accentDark;
-        padding: 2.25rem;
+        padding-block: 2.25rem;
+        padding-inline: 12%;
         height: 284px;
         text-align: center;
         text-wrap: pretty;
+        justify-content: space-between;
 
         span{
             @include heading-xl-gold;
@@ -35,7 +37,7 @@
         img{
             height: 30px;
             width: 185px;
-            margin-block-start: 1.5rem;
+            margin-block-start: auto;
         }
     
         p{
@@ -45,7 +47,8 @@
     &Second{
         @extend %card;
         flex-direction: column-reverse;
-        background-color: $mainGradient;
+        background-color: $mainBackground;
+        background-image: $mainGradient;
         padding: 1rem;
         height: 158px;
         justify-content: space-between;
@@ -65,8 +68,10 @@
         background-color: $accentLight;
         height: 212px;
         padding-block-start: 1rem;
-        padding-inline: 1rem;
-        align-items: normal;
+        padding-inline-start: 1rem;
+        padding-inline-end: calc(100% - 18rem);
+
+        text-wrap: pretty;
 
         h2{
             @include heading-m-dark;
@@ -76,6 +81,7 @@
             width: 202px;
             height: 152px;
             margin-block-start: 1rem;
+            align-self: flex-start
         }
     }
     &Fourth{
@@ -83,8 +89,9 @@
         background-color: $accentDark2;
         height: 458px;
         padding-block: 2rem;
-        padding-inline: 1rem;
+        padding-inline: calc(50% - 10rem);
         text-align: center;
+        justify-content: space-between;
 
         h2{
             @include heading-m-dark;
@@ -97,9 +104,7 @@
         
         img{
             width: 300px;
-            height: 266px;
-            margin-block-start: 1.5rem;
-            margin-block-end: 1.25rem;
+            height: 267px;
         }
     }
     &Fifth{
@@ -107,7 +112,8 @@
         background-color: $accentDark;
         flex-direction: column-reverse;
         height: 363px;
-        padding: 1.8rem;
+        padding-block: 1.8rem;
+        padding-inline: calc(50% - 9rem);
         text-align: center;
         justify-content: space-between;
 
@@ -127,7 +133,7 @@
         background-color: $mainLight;
         height: 209px;
         padding: 1.25rem;
-        align-items: normal;
+        align-items: flex-start;
 
         h2{
             @include heading-xm-alt;
@@ -151,9 +157,10 @@
         @extend %card;
         background-color: $accentLight2;
         height: 228px;
-        padding-block: 2rem;
-        padding-inline: 1.75rem;
-        align-items: normal;
+        padding-block-start: 2rem;
+        padding-inline-start: 2rem;
+        padding-inline-end: calc(100% - 19rem);
+        align-items: flex-start;
 
         h2{
             @include heading-m-alt;
@@ -164,26 +171,31 @@
         
         img{
             margin-block-start: 1.625rem;
-            width: 187px;
-            height: 89px;
+            margin-inline-start: -0.25rem;
+            width: 186px;
+            height: 88px;
         }
     }
     &Eightth{
         @extend %card;
         background-color: $accentLight;
         height: 344px;
-        padding: 1.5rem;
-        align-items: normal;
+        padding-block: 1.5rem;
+        padding-inline-start: 1.5rem;
+        padding-inline-end: calc(100% - 18rem);
         justify-content: space-between;
 
         h2{
             @include heading-m-alt;
+            text-wrap: pretty;
+            max-width: 100%;
+            align-self: flex-start;
         }
         
         img{
-            // margin-block-start: 1.5rem;
             width: 215px;
             height: 218px;
+            align-self: flex-start;
         }
     }
 }

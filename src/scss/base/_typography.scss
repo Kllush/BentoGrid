@@ -61,7 +61,7 @@
 }
 
 @mixin heading-m-alt-purple {
-  @include heading($accentDark, 2rem, 2.125rem, 500, -10);
+  @include heading($accentDark, 2.125rem, 2.125rem, 500, -10);
     font-style: italic;
   }
 

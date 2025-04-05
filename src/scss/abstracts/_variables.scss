@@ -1,6 +1,5 @@
 //Colours//
 
-$mainGradient: #FFFFFF;
 $mainBackground: #F5F5F5;
 $mainLight: #FFFFFF;
 $mainDark: #121212;
@@ -8,3 +7,10 @@ $accentLight: #FFCE6E;
 $accentLight2: #F9EEE1;
 $accentDark: #7650DC;
 $accentDark2: #DACFFC;
+$mainGradient: linear-gradient(to bottom, #{$mainLight} 9.6%, #{$mainBackground} 23.1%, #{$mainLight} 36.6%);
+
+$gridGap: 18px;
+
+$cardNames: (First, Second, Third, Fourth, Fifth, Sixth, Seventh, Eightth);
+
+$gridAreas: (socialMedia, multAccounts, consistentSched, schedPost, growFollowers, audienceGrowth, createPost, AIContent);
